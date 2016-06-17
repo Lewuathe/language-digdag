@@ -1,6 +1,6 @@
 {
   "name": "language-digdag",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds syntax highlighting to Digdag file in Atom",
   "engines": {
     "atom": "*"
