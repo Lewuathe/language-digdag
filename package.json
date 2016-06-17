@@ -1,0 +1,17 @@
+{
+  "name": "language-digdag",
+  "version": "0.0.1",
+  "description": "Adds syntax highlighting to Digdag file in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lewuathe/language-digdag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lewuathe/language-digdag/issues"
+  },
+  "license": "MIT"
+}

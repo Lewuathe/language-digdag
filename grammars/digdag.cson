@@ -1,0 +1,61 @@
+'scopeName': 'source.digdag'
+'name': 'DigDag'
+'fileTypes': ['dig']
+
+'patterns': [
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((E|e)(\\+|-)?[0-9]+)?\\b'
+    'name': 'constant.numeric.digdag'
+  },
+  {
+    'begin': '#'
+    'end': '\\n'
+    'name': 'comment.line.sharp.digdag'
+  }
+  {
+    'match': '^(timezone|session_uuid|session_time|session_date|session_date_compact|session_local_time|session_tz_offset|session_unixtime)\\s*:\\s*(\\w+)'
+    'captures':
+      '1':
+        'name': 'support.constant.digdag'
+  },
+  {
+    'match': '^(schedule)'
+    'name': 'keyword.control.digdag'
+  }
+  {
+    'match': '(\\+(\\w+)|(_export)|(_parallel)|(_background)|(_error)|(!include))\\s*:'
+    'captures':
+      '1':
+        'name': 'keyword.control.pseudo-method.digdag'
+    'name': 'entity.name.function.digdag'
+  },
+  {
+    'match': '((if>)|(fail>)|(td>)|(td_run>))\\s*:'
+    'captures':
+      '1':
+        'name': 'keyword.control.pseudo-method.ruby'
+  },
+  {
+    'match': '\\b(\\w+>)\\s*:'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.constant.digdag'
+  },
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.digdag'
+    'end': '"(?!")'
+    'endCaptures':
+      '0':
+          'name': 'punctuation.definition.string.end.digdag'
+    'name': 'string.quoted.double.digdag'
+    'patterns': [
+      {
+        'match': '\'\'|""'
+        'name': 'constant.character.escape.digdag'
+      }
+    ]
+  }
+]

@@ -1,2 +1,4 @@
-# language-digdag
-Adds syntax highlighting to Digdag files in Atom
+language-digdag
+======
+
+Digdag configration file `*.dig` symtax highlighter on Atom editor.
