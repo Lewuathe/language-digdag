@@ -1,0 +1,4 @@
+'.source.digdag':
+  'editor':
+    'softWrap': true
+    'commentStart': '# '
